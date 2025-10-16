@@ -1,0 +1,94 @@
+.platform {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.platform h1 {
+  color: #1f3c88;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.platform-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+}
+
+.platform-tabs button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.platform-tabs button.active {
+  color: #1f3c88;
+  border-bottom: 3px solid #1f3c88;
+}
+
+.platform-tabs button:hover {
+  color: #d72323;
+}
+
+.platform-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.curso-item, .profesor-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.curso-item h3, .profesor-item h3 {
+  margin-top: 0;
+  color: #1f3c88;
+}
+
+.btn-descargar {
+  display: inline-block;
+  background-color: #1f3c88;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn-descargar:hover {
+  background-color: #152b5f;
+}
+
+.pago-info {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btn-pagar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn-pagar:hover {
+  background-color: #45a049;
+}

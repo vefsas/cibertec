@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Estilos para las páginas generales */
+.nosotros-page,
+.carreras-page,
+.programas-page,
+.contacto-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nosotros-page h1,
+.carreras-page h1,
+.programas-page h1,
+.contacto-page h1 {
+  color: #1f3c88;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+/* Estilos específicos para la página Nosotros */
+.mision-vision {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.mision, .vision {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.historia, .logros {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Estilos específicos para la página Carreras */
+.carreras-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.carrera-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.carrera-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-info {
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-info:hover {
+  background-color: #152b5f;
+}
+
+/* Estilos específicos para la página Programas */
+.programas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.programa-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.programa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-inscribir {
+  background-color: #d72323;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-inscribir:hover {
+  background-color: #b51c1c;
+}
+
+/* Estilos específicos para la página Contacto */
+.contacto-container {
+  display: flex;
+  gap: 40px;
+}
+
+.contacto-info, .contacto-form {
+  flex: 1;
+}
+
+.contacto-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contacto-form button {
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contacto-form button:hover {
+  background-color: #152b5f;
+}
+
+.mapa {
+  margin-top: 20px;
+}
+
+.contacto-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto-info, .contacto-form {
+  flex: 1;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-contacto {
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-bottom: 20px;
+}
+
+.btn-contacto:hover {
+  background-color: #152b5f;
+}
+
+.contacto-alternativo {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+
+/* Estilos para los horarios */
+.horarios {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.horarios-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.horario-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.horario-item h3 {
+  color: #1f3c88;
+  margin-top: 0;
+}
+
+/* Estilos para la sección de plataforma */
+.plataforma-section {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}

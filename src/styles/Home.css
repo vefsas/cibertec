@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #eee;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000;
+  width: 80%;
+}
+
+.hero-text p {
+  font-size: 0.6em;
+  margin-top: 15px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.accesos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: #d72323;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.accesos button {
+  background-color: white;
+  color: #1f3c88;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-size: 1em;
+}
+
+.accesos button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.comunicados {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.comunicados h2 {
+  color: #1f3c88;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.azul {
+  background-color: #1f3c88;
+}
+
+.card.rojo {
+  background-color: #d72323;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.3em;
+}
